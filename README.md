@@ -1,18 +1,24 @@
 # Record iOS Simulator
 A script to start and stop video recordings from the iOS Simulator as easily as taking a screenshot.
 
-Also includes Alfred and Keyboard Maestro implementations that allow you to start and stop recordings easily with a keystroke or other trigger of your choice.
+Run the script to start a video recording, then run it again to stop that recording and have it saved to the Desktop with a name like `Simulator 2019-01-04 at 10.16.21.mp4`.
+
+Also includes Alfred and Keyboard Maestro implementations that allow you to start and stop a recording easily with ⌘R in the Simulator (or any other trigger those apps support).
 
 # Usage Instructions
 
 ## Alfred
 Download the `Record Simulator.alfredworkflow` file and open it to add the workflow to Alfred. After adding the workflow you will need to double click the `Hotkey` action and assign a hotkey of your choice to start and stop the recording. (I like ⌘R)
 
+Once the workflow has been added, and the hotkey set, just use the hotkey in the Simulator to start a video recording, and then again to end the recording.
+
 ## Keyboard Maestro
 Download the `Record Simulator.kmmacros` file and open it to add the macro to Keyboard Maestro. By default it is triggered using the ⌘R hotkey while the Simulator is focused, but you can tweak this behaviour after adding the macro if desired.
 
+Once the macro has been added, just use the hotkey in the Simulator to start a video recording, and then again to end the recording.
+
 ## Script Usage
-If using other utilities, or wanting to simply have a script that you can run in the terminal, then download and run the bash script. On first run it will start a recording, on second run it will end the recording.
+If using other utilities, or wanting to simply have a script that you can run in the terminal, then download and run the bash script. On first run it will start a recording, on second run it will end the recording and save it to the Desktop.
 
 # Behaviour
 There are several variables at the top of the script that can be edited to modify the behaviour:
