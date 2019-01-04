@@ -8,8 +8,6 @@ Also includes Alfred and Keyboard Maestro implementations that allow you to star
 ## Alfred
 Download the `Record Simulator.alfredworkflow` file and open it to add the workflow to Alfred. After adding the workflow you will need to double click the `Hotkey` action and assign a hotkey of your choice to start and stop the recording. (I like ⌘R)
 
-Alternatively, you can create your own Alfred Workflow and copy the contents of `record-simulator.sh` into a `Run Script` action.
-
 ## Keyboard Maestro
 Download the `Record Simulator.kmmacros` file and open it to add the macro to Keyboard Maestro. By default it is triggered using the ⌘R hotkey while the Simulator is focused, but you can tweak this behaviour after adding the macro if desired.
 
