@@ -6,7 +6,33 @@
 	<string>com.alexjsp.record-simulator</string>
 	<key>connections</key>
 	<dict>
+		<key>6FC86196-CA1F-4259-805F-B8C67458A622</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EBD0B34D-1E5D-4021-B09E-8023981CBA1D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B87E5BC1-3622-4A9F-824B-D0E22A8952B1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EBD0B34D-1E5D-4021-B09E-8023981CBA1D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DADA5CC7-2A03-4E31-9674-B6C61BECCDA6</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -30,29 +56,6 @@
 	<string>Record Simulator</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<true/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>#INSERT_SCRIPT#</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>EBD0B34D-1E5D-4021-B09E-8023981CBA1D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -88,6 +91,71 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#INSERT_SCRIPT#</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EBD0B34D-1E5D-4021-B09E-8023981CBA1D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>com.alexjsp.record-ios-simulator</string>
+				<key>triggername</key>
+				<string>Record Simulator</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>DADA5CC7-2A03-4E31-9674-B6C61BECCDA6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>record</string>
+				<key>subtext</key>
+				<string>Starts a video recording of the iOS Simulator.</string>
+				<key>text</key>
+				<string>Record iOS Simulator</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>6FC86196-CA1F-4259-805F-B8C67458A622</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>A workflow to start and stop video recordings from the iOS Simulator as easily as taking a screenshot.
@@ -95,6 +163,13 @@
 Assign a hotkey such as ⌘R after adding this workflow.</string>
 	<key>uidata</key>
 	<dict>
+		<key>6FC86196-CA1F-4259-805F-B8C67458A622</key>
+		<dict>
+			<key>xpos</key>
+			<integer>90</integer>
+			<key>ypos</key>
+			<integer>370</integer>
+		</dict>
 		<key>B87E5BC1-3622-4A9F-824B-D0E22A8952B1</key>
 		<dict>
 			<key>xpos</key>
@@ -102,12 +177,19 @@ Assign a hotkey such as ⌘R after adding this workflow.</string>
 			<key>ypos</key>
 			<integer>80</integer>
 		</dict>
+		<key>DADA5CC7-2A03-4E31-9674-B6C61BECCDA6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>90</integer>
+			<key>ypos</key>
+			<integer>220</integer>
+		</dict>
 		<key>EBD0B34D-1E5D-4021-B09E-8023981CBA1D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>290</integer>
+			<integer>350</integer>
 			<key>ypos</key>
-			<integer>80</integer>
+			<integer>220</integer>
 		</dict>
 	</dict>
 	<key>version</key>
