@@ -8,7 +8,7 @@ Also includes Alfred and Keyboard Maestro implementations that allow you to star
 # Usage Instructions
 
 ## Alfred
-Download the [Record Simulator.alfredworkflow](https://github.com/alexp2ad/record-ios-simulator/raw/master/Record%20Simulator.alfredworkflow) file and open it to add the workflow to Alfred. After adding the workflow you will can double click the `Hotkey` action and assign a hotkey of your choice to start and stop the recording (I like ⌘R), or you can just trigger the workflow from Alfred with the `record` keyword.
+Download the [Record Simulator.alfredworkflow](https://github.com/alexp2ad/record-ios-simulator/raw/master/Record%20Simulator.alfredworkflow) file and open it to add the workflow to Alfred. After adding the workflow you can double click the `Hotkey` action and assign a hotkey of your choice to start and stop the recording (I like ⌘R), or you can just trigger the workflow from Alfred with the `record` keyword.
 
 Once the workflow has been added, and the hotkey set, just use the hotkey in the Simulator to start a video recording, and then again to end the recording.
 
