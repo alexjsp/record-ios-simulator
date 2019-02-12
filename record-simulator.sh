@@ -11,6 +11,9 @@ openRecordings=true
 # Choose whether to play sounds when starting and stopping a recording
 playSounds=true
 
+# Convert the recorded video to a gif
+convertToGIF=false
+
 # Edit the format of the filename. By default it saves files with names like `Simulator 2019-01-04 at 10.16.21.mp4`
 # do not add an extension to the below variable, `.mp4` will be added further down.
 filename="Simulator "$(date '+%Y-%m-%d at %H.%M.%S')
@@ -42,6 +45,11 @@ if [ -f $recordingPathVarStoragePath ] && [ -f $recordingPIDVarStoragePath ]; th
     sleep 2
     kill -SIGINT $recordingPID
     sleep 1
+    if [ "$convertToGIF" = true ] ; then
+        gifPath="${recordingPath//mp4/gif}"
+        resolution=$(ffprobe -v quiet -show_entries stream=width,height -of csv=s=x:p=0 "$recordingPath")
+        ffmpeg -v quiet -i "$recordingPath" -s "$resolution" -pix_fmt rgb8 -r 10 -f gif - | gifsicle --optimize=3 --delay=10 > "$gifPath"
+    fi
     if [ "$openRecordings" = true ] ; then
         open "$recordingPath"
     else

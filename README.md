@@ -20,6 +20,12 @@ Once the macro has been added, just use the hotkey in the Simulator to start a v
 ## Script Usage
 If using other utilities, or wanting to simply have a script that you can run in the terminal, then download and run the bash script. On first run it will start a recording, on second run it will end the recording and save it to the Desktop.
 
+## Dependencies
+The `convertToGIF` option relies on a few external dependencies. Thankfully, they are all available through Homebrew:
+
+    brew cask install xquartz
+    brew install ffmpeg gifsicle
+
 # Behaviour
 There are several variables at the top of the script that can be edited to modify the behaviour:
 
@@ -28,6 +34,7 @@ There are several variables at the top of the script that can be edited to modif
 | `outputDirectory` | `~/Desktop/` | Determines where recordings are saved. |
 | `openRecordings` | `true` | If `true` video recordings will be opened when ended, otherwise a notification is displayed. |
 | `playSounds` | `true` | If `true` system sounds will be played when starting and stopping a recording. |
+| `convertToGIF` | `false` | If `true` video recordings will be converted to GIFs. The original video file will be kept. |
 | `filename` | `"Simulator "$(date '+%Y-%m-%d at %H.%M.%S')` | By default files are saved with date-based names like `Simulator 2019-01-04 at 10.16.21.mp4`, tweak this to change filenames to your liking. (No need to include an extension, `.mp4` is added further into the script) |
 
 # Contributing
